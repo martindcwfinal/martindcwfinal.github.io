@@ -1,0 +1,418 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+.Header{
+	text-transform: uppercase;
+	background-color: white;
+	height: 70px;
+	padding: 10px;
+}
+.Header img{
+	float:left;
+	width: 70px;
+}
+.Header ul{
+	float:left;
+	margin: 25px 5%;
+	font-family: Arial, sans-serif;
+}
+.Header ul li{
+	display:inline;
+	padding: 5px 10px;
+}
+.Header ul li.active{
+	color: darkviolet;
+	font-weight: 700;
+}
+.Header ul li:hover{
+	color: black;
+	font-weight: 700;
+	cursor: pointer;
+}
+.Header input{
+	float: right;
+	padding: 5px 10px;
+	margin: 20px 10px;
+	border: none;
+	border: 1px solid black;
+	background-color:transparent;
+	border-radius: 5px;
+}
+.Header input:hover{
+	background-color: darkviolet;
+	color:white;
+	border: none;
+	font-weight: 700;
+	cursor: pointer;
+}
+.Scontainer{
+	padding: 15px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Slider{
+	width: 90%;
+	height: 700px;
+	border-radius:15px;
+	overflow: hidden;
+}
+.Slides{
+	width: 500%;
+	height: 700px;
+	display: flex;
+}
+.Slides input{
+	display: none;
+}
+.Slide{
+	width: 20%;
+	transition: 1s;
+}
+.Slide img{
+	width: 100%;
+	height: 100%;
+}
+.Navigation{
+	position: absolute;
+	width: 90%;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+.button{
+	border: 2px solid #ffd9f0;
+	padding: 5px;
+	margin: 0 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.button:hover{
+	background-color: #ffd9f0;
+}
+#r1:checked ~ .s1{
+	margin-left: 0;
+}
+#r2:checked ~ .s1{
+	margin-left: -20%;
+}
+#r3:checked ~ .s1{
+	margin-left: -40%;
+}
+#r4:checked ~ .s1{
+	margin-left: -60%;
+}
+
+.Quote{
+	padding: 20px;
+	margin: 5px 5%;
+	border-radius: 15px;
+	text-align: center;
+	background-color: #ffd9f0;
+}
+.Quote h1{
+	font-size: 50px;
+	font-family: Papyrus, fantasy;
+}
+.Quote h3{
+	font-size: 20px;
+	font-weight: 500;
+	padding: 8px 0;
+}
+.Quote input{
+	padding: 10px 10px;
+	margin: 10px 0;
+	border: none;
+	color: darkviolet;
+	font-weight: 700;
+	border-radius: 5px;
+	background-color: white;
+}
+.Quote input:hover{
+	background-color: darkviolet;
+	font-weight: 700;
+	color: white;
+	cursor: pointer;
+}
+.Services{
+	padding: 10px 10px;
+	font-family: Arial, sans-serif;
+}
+.SerInfo{
+	text-align: center;
+}
+.SerInfo p{
+	margin:5px;
+	font-size: 20px;
+}
+.SerInfo h1{
+	font-size: 37px;
+}
+.Frow{
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.Service img{
+	width: 300px;
+	height: 200px;
+	border-radius: 15px;
+}
+.Combo{
+	margin: 0 5%;
+	display: flex;
+	background-color: #ffd9f0;
+	border-radius: 15px;
+	font-family: Arial, sans-serif;
+}
+.Cimage img{
+	height: 500px;
+	border-radius: 15px;
+}
+.Ctext{
+	padding: 30px 15px 0 25px;
+}
+.Ctext hr{
+	margin: 0 0 10px 0;
+	background-color: darkviolet;
+}
+.Ctext h1{
+	font-size: 40px;
+	color: darkviolet;
+	font-family: Papyrus, fantasy;
+}
+.Ctext p{
+	padding: 5px 0 25px 0;
+}
+.Ctextinfo i{
+	color: #ff70b7;
+	float: left;
+	padding: 0 10px 40px 5px;
+}
+.Ctextinfo{
+	float: left;
+	width: 45%;
+	padding: 10px;
+}
+.Combo input{
+	padding: 10px 10px;
+	margin: 10px 10px;
+	border: none;
+	color: darkviolet;
+	font-weight: 700;
+	border-radius: 5px;
+	background-color: white;
+}
+.Combo input:hover{
+	background-color: darkviolet;
+	font-weight: 700;
+	color: white;
+	cursor: pointer;
+}
+.Gholder{
+	padding: 30px 0;
+	margin: 15vh 20% 10px 20%;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.Gcontent img{
+	height: 150px;
+	border-radius: 5px;
+}
+.Gcontent h2{
+	padding: 5px 0 10px 0;
+}
+.Gcontent{
+	background-color: rgba(255,255,255,.85);
+	padding: 10px 10px 20px 10px;
+	border-radius: 15px;
+	color: black;
+}
+.Gallery{
+	margin: 25px 5%;
+	padding: 20px;
+	background: url("12.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 80vh;
+	border-radius: 15px;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+.Gallery input{
+	padding: 10px 10px;
+	margin: 10px 10px;
+	border: none;
+	font-weight: 700;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.85);
+	color: black;
+}
+.Gallery input:hover{
+	background-color: darkviolet;
+	font-weight: 700;
+	color: #ffd9f0;
+	cursor: pointer;
+}
+.Blog{
+	margin: 25px 5%;
+	padding: 20px;
+	background:url("16.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 80vh;
+	border-radius: 15px;
+	font-family: Arial, sans-serif;
+}
+.Bholder{
+	background-color: rgba(255,255,255,.85);
+	float: right;
+	width: 45%;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 10vh 0;
+}
+.Bpin{
+	display:flex;
+	justify-content: space-around;
+}
+.Bpin img{
+	height:150px;
+	border-radius: 5px;
+}
+.Bpintext{
+	padding-left: 15px;
+	margin: 5px 0 0 0;
+}
+.Bpintext h2{
+	padding-bottom: 5px;
+}
+.RM{
+	padding-top: 5px;
+}
+.RM:hover{
+	font-weight: 700;
+	color: darkviolet;
+	cursor: pointer;
+}
+.BMP img{
+	width:60px;
+	border-radius: 30px;
+}
+.Bmore{
+	display:flex;
+	justify-content: space-around;
+	padding: 25px 0;
+	margin-top:10px;
+	width: 50%;
+}
+.Blog input{
+	padding: 10px 10px;
+	margin: 40px 10px;
+	border: none;
+	font-weight: 700;
+	border-radius: 5px;
+	background-color: #ffd9f0;
+	color: darkviolet;
+}
+.Bleft{
+	display: flex;
+	justify-content: space-between;
+}
+.Blog input:hover{
+	background-color: darkviolet;
+	font-weight: 700;
+	color: #ffd9f0;
+	cursor: pointer;
+}
+.Members{
+	padding: 20px;
+	margin: 5px 5%;
+	border-radius: 15px;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+.Mpeople{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+	margin-top: 10px;
+}
+.Mem img{
+	height: 300px;
+	border-radius: 15px;
+}
+.Mtitle{
+	padding: 10px 0;
+}
+.Mtitle h1{
+	font-size: 40px;
+	padding-bottom: 5px;
+}
+.nor{
+	margin-top:10vh;
+}
+.Footer{
+	font-family: Arial, sans-serif;
+	padding: 10px 0 40px 0;
+	background-color: rgba(234,234,234,1.00);
+}
+.Finfo h3{
+	padding: 5px 0;
+}
+.Finfo{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.Fholder{
+	display: flex;
+	justify-content: space-around;
+	padding: 0 0 50px 0;
+}
+.FOption h4{
+	display: inline;
+}
+.Foptions{
+	display: flex;
+	justify-content: space-between;
+	width: 20%;
+}
+.ShortContact input{
+	float: left;
+	margin: 20px 5px;
+}
+.ShortContact img{
+	width: 60px;
+	border-radius:35px;
+	margin: 0 5px;
+	float: left;
+}
+.submit{
+	padding: 1px 10px;
+	border: none;
+	border: 1px solid black;
+	background-color:transparent;
+	border-radius: 5px;
+}
+.submit:hover{
+	background-color: darkviolet;
+	color:white;
+	border: none;
+	font-weight: 700;
+	cursor: pointer;
+}
+.hotline{
+	position: fixed !important;
+	right: 15px;
+	bottom: 30px;
+}
+.hotline:hover{
+	cursor: pointer;
+	color: darkviolet;
+}
